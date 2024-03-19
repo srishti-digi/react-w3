@@ -24,21 +24,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>React</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">/div>
-<script>
-      class Car{
-        constructor(name){
-          this.brand=name;
-        }
-      }
-      const myCar=new Car('Maruti');
-      document.write(myCar.brand);
-</script>
     
+
+<script>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+const mycar = new Car("Ford");
+document.write(mycar.present());
+</script>
+
 
    
 
